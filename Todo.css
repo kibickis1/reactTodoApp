@@ -1,0 +1,99 @@
+.todoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.todoBlock {
+  border-radius: 3px;
+  background-color: orange;
+  box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 31px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 31px 0px rgba(0, 0, 0, 0.75);
+  margin: 20px auto;
+  width: 250px;
+  padding: 10px;
+}
+
+.todoBlock:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.removeTodoButton {
+  position: fixed;
+  font-size: 1.1rem;
+}
+
+.todoBlock p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.removeTodoButton:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.todoListItem {
+    display: flex;
+    width: 900px;
+    background-color: orange;
+    justify-content: space-around;
+    border: 1px solid rgb(252, 252, 252);
+    border-radius: 2px;
+    margin: 2px;
+}
+
+.todoListItem:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.todoListItem .todo {
+    width: 70%;
+    text-align: center;
+}
+
+.todoListItem .date {
+    width: 30%;
+    text-align: center;
+}
+
+
+
+.layoutChangeButton{
+    border: none;
+    background-color: rgb(102, 16, 164);
+    width: 75px;
+    height: 75px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.layoutChangeButton:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* When todo is hovered delete button appears */
